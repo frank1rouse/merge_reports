@@ -1,0 +1,102 @@
+h1 {
+    color: #333;
+    font-size: 26px;
+}
+
+h2 {
+    color: #444;
+    font-size: 20px;
+}
+
+.headpanel {
+    border-spacing: 20px;
+    border-collapse: separate;
+}
+
+th#usage {
+    width: 40%;
+}
+
+.charttitle {
+    text-align: center;
+    color: #555555;
+}
+
+table.hovertable {
+    font-family: verdana,arial,sans-serif;
+    font-size:12px;
+    border-width: 1px;
+    border-color: #68A;
+    border-collapse: collapse;
+    color: #49A1F9;
+}
+
+table.hovertable th {
+    background-color:#ffffff;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #DEF;
+}
+
+
+.dependencyrow {
+    /*background-color:#F8FCFF;*/
+    background-color:#224459;
+    color: #59B1FF;
+}
+.dependencyrow:hover {
+    background-color:#ff9;
+}
+
+table.hovertable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #68A;
+}
+
+table.locationtab td {
+    border-style: none;
+}
+
+table.locationtab th {
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+[tooltip]:before {
+    /* needed - do not touch */
+    content: attr(tooltip);
+    position: absolute;
+    opacity: 0;
+
+    /* customizable */
+    transition: all 0.15s ease;
+    padding: 10px;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px silver;
+}
+
+[tooltip]:hover:before {
+    /* needed - do not touch */
+    opacity: 1;
+
+    /* customizable */
+    background: yellow;
+    margin-top: -50px;
+    margin-left: 20px;
+}
+
+[tooltip]:not([tooltip-persistent]):before {
+    pointer-events: none;
+}
+
+tr:nth-of-type(odd) {
+  background-color: lightgreen;\n')
+}
+
+tr:nth-of-type(even) {
+    background-color: #A3FF4B;
+}
